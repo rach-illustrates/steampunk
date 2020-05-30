@@ -1,0 +1,30 @@
+/* Index2.html stylesheet */
+html, body {
+	background-color: #CA864B;
+	padding:0;
+	margin:0;
+	height:100%;
+}
+
+.img-responsive {
+	height:auto;
+	max-width: 100%
+}
+
+@media (min-width: 992px) {
+	
+}
+
+/*table {
+	background-image: url("../img/Profile_page.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;	
+	height:100%;
+	width:100%;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle;	
+}*/

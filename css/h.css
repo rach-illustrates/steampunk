@@ -1,0 +1,128 @@
+/*Hoverboard CSS*/
+html, body {
+	height:100%;
+	background-color: rgb(202,134,75);
+}
+
+#board {
+	position: relative;
+	overflow: hidden;
+}
+
+#placeholder {
+	visibility: hidden;
+}
+
+#steam,
+#chassis,
+#propeller,
+#turbine,
+#gauge,
+#wings,
+#footholds {
+	position: absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#chassis {
+	z-index:1;
+}
+
+#propeller {
+	z-index:2;
+}
+
+#turbine {
+	z-index:3;
+}
+
+#gauge {
+	z-index:4;
+}
+
+#wings {
+	z-index:5;
+}
+
+#footholds {
+	z-index:6;
+}
+
+#hover-state {
+	z-index: 7;
+}
+
+.button,
+.board-el,
+.title_row td,
+.button {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+#chassis-btn,
+#propeller-btn,
+#turbine-btn,
+#gauge-btn,
+#wings-btn,
+#footholds-btn,
+.button,
+.board-el {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+#placeholder.show {
+	visibility: visible;
+}
+
+#chassis-btn {
+	right: 66%;
+	bottom:50%;
+}
+
+#propeller-btn {
+	left:33%;
+	right:33%;
+	bottom:50%;
+}
+
+#turbine-btn {
+	left:66%;
+	bottom:50%;
+}
+
+#gauge-btn {
+	right: 66%;
+	top:50%;
+}
+
+#wings-btn {
+	left:33%;
+	right:33%;	
+	top:50%;
+}
+
+#footholds-btn {
+	left:66%;	
+	top:50%;
+}
+
+.button {
+	z-index: 8;
+}
+
+#submit,
+#home {
+	z-index: 9;
+}

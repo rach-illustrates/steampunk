@@ -1,0 +1,154 @@
+html,
+body,
+#character {
+	background-color: rgb(240,228,207);
+	margin:0;
+	padding: 0;
+	height: 100%;
+}
+
+
+#home,
+#submit {
+	position: absolute;
+	width:15%;
+	top:2%;
+	left:5%;
+	height: auto;
+	z-index: 10;
+	max-width: 150px;
+	max-height: 100px;
+	min-width: 70px;
+}
+
+@media (min-width: 586px) {
+	#home {
+		margin-top:20px;
+		top:0;
+		bottom:0;
+	}
+}
+
+#home:hover .hover {
+	display: block;
+}
+
+#home:hover .initial,
+#home .hover {
+	display: none;
+}
+
+#character {
+	overflow: hidden;
+}
+
+ .element,
+ #character {
+ 	position: relative;
+ 	background-image:url("../img/thanks/Final_page_background_w_frame.png");
+ 	background-size:contain;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	z-index: 0;
+ }
+
+#form,
+ .element {
+ 	position: absolute;
+ 	top:0;
+ 	right:0;
+ 	bottom:0;
+ 	left:0;
+ }
+
+ #title {
+ 	background-image:url("../img/thanks/Ready_to_race_title.png");
+ 	z-index: 1;
+ }
+
+ #steam {
+ 	background-image:url("../img/thanks/Steam.png");
+ 	z-index: 1;
+ }
+
+ #chassis {
+	z-index:2;
+}
+
+#propeller {
+	z-index:3;
+}
+
+#turbine {
+	z-index:4;
+}
+
+#gauge {
+	z-index:5;
+}
+
+#wings {
+	z-index:6;
+}
+
+#footholds {
+	z-index:7;
+}
+
+#body {
+ 	background-image:url("../img/thanks/Final_page_body.png");
+ 	z-index: 8;
+ }
+
+ #outfit {
+ 	z-index: 9;
+ }
+
+ #form {
+ 	top:80%;
+ 	height:10%;
+ 	text-align: center;
+ }
+
+ .form-item {
+ 	display: block;
+ 	padding:5px;
+ 	margin:10px auto;
+ 	max-width: 400px;
+ 	width:100%;
+ }
+
+#submit {
+	left:auto;
+	right:5%;
+	top:-100%;
+	min-width: 70px;
+	bottom:0;
+}
+
+#submit:hover .hover {
+	display: block;
+}
+
+#submit:hover .disabled.hover,
+#submit:hover .initial,
+#submit .hover {
+	display: none;
+}
+
+.disabled {
+	cursor: default;
+}
+
+
+#submit .disabled.initial {
+	display: block;
+	opacity: 0.5;
+}
+
+@media (min-width: 586px) {
+	#submit {
+		margin-bottom:20px;
+		bottom:5px;
+	}
+}
